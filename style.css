@@ -1,8 +1,9 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f6d1dc; /* toz pembe */
     padding: 40px;
 }
+
 
 h1 {
     margin-bottom: 20px;
@@ -29,4 +30,37 @@ li {
     background: #fff;
     padding: 8px;
     margin-bottom: 8px;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+    gap: 5px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.delete-btn {
+    background: #ff6b6b;
+    border: none;
+    color: #fff;
+    padding: 4px 8px;
+    cursor: pointer;
 }

@@ -4,18 +4,29 @@ const list = document.querySelector("ul");
 
 button.addEventListener("click", () => {
     const taskText = input.value.trim();
-
-    if (taskText === "") {
-        return;
-    }
+    if (taskText === "") return;
 
     const listItem = document.createElement("li");
-    listItem.textContent = taskText;
 
-    listItem.addEventListener("click", () => {
+    const span = document.createElement("span");
+    span.textContent = taskText;
+
+    span.addEventListener("click", () => {
+        listItem.classList.toggle("completed");
+    });
+
+    const deleteButton = document.createElement("button");
+    deleteButton.textContent = "X";
+    deleteButton.classList.add("delete-btn");
+
+    deleteButton.addEventListener("click", () => {
         listItem.remove();
     });
 
+    listItem.appendChild(span);
+    listItem.appendChild(deleteButton);
     list.appendChild(listItem);
+
     input.value = "";
 });
+
