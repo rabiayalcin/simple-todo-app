@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <title>Simple Todo App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-<div class="container">
-    <h1>Todo List</h1>
 
+<div class="container">
+    <h1>🌸Yapılacaklar Listesi</h1>
     <div class="input-group">
-        <input type="text" placeholder="Add a new task">
-        <button>Add</button>
-    </div>
+    <input type="text" id="taskInput" placeholder="Yeni bir görev ekle">
+    <button id="addBtn">Ekle</button>
+</div>
+
 
     <ul>
         <!-- Todo items will be added here -->
+         <ul id="taskList">
+
     </ul>
 </div>
 
+<script src="script.js"></script>
 </body>
 </html>
+

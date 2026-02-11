@@ -1,24 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f6d1dc; /* toz pembe */
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2b8c6;
     padding: 40px;
 }
 
-
 h1 {
+    font-weight: 600;
     margin-bottom: 20px;
+    color: #c06a5a;
 }
 
 input {
     padding: 8px;
-    width: 200px;
+    width: 300px;
 }
 
 button {
-    padding: 8px 12px;
-    margin-left: 5px;
+    background-color: #f4a7b9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #ee8fa6;
+}
+
 
 ul {
     list-style: none;
@@ -35,10 +44,11 @@ li {
 .container {
     max-width: 400px;
     margin: 0 auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color:  #fde9e2;/* soft krem */
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
 }
 
 .input-group {
@@ -58,7 +68,7 @@ li.completed {
 }
 
 .delete-btn {
-    background: #ff6b6b;
+    background: #a03b67;
     border: none;
     color: #fff;
     padding: 4px 8px;
