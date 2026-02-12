@@ -4,6 +4,12 @@ console.log("JS calisiyor");
 let todos = JSON.parse(localStorage.getItem("todos")) || [];
 
 const input = document.querySelector("input");
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        button.click();
+    }
+});
+
 const button = document.querySelector("button");
 const list = document.querySelector("ul");
 
