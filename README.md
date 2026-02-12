@@ -1,24 +1,27 @@
 
 # Simple Todo App
 
-## Description
+## Açıklama
 
-This project is a simple todo list application that helps users manage their daily tasks.
-Users can add tasks, mark them as completed, and remove them from the list.
+Bu proje, kullanıcıların günlük yapılacak işlerini ekleyip takip edebileceği basit bir yapılacaklar listesi uygulamasıdır.
+Kullanıcılar görev ekleyebilir, görevleri tamamlandı olarak işaretleyebilir ve silebilir.
+Görevler LocalStorage kullanılarak saklandığı için sayfa yenilense bile kaybolmaz.
 
-## Features
+## Özellikler
 
-- Add new tasks to the list
-- Remove tasks by clicking on them
-- Simple and clean user interface
+- Yeni görev ekleme
+- Görevleri tamamlandı olarak işaretleme
+- Görev silme
+- LocalStorage ile kalıcı veri saklama
 
-## Technologies Used
+## Kullanılan Teknolojiler
 
 - HTML
 - CSS
-- JavaScript
+- JavaScript (Vanilla JS)
+- LocalStorage
 
-## Project Structure
+## Proje Yapısı
 
 simple-todo-app/
 ├─ index.html
@@ -26,9 +29,11 @@ simple-todo-app/
 ├─ script.js
 └─ README.md
 
-## How It Works
+## Nasıl Çalışır?
 
-The application allows users to add tasks using an input field and a button.
-Each task is displayed as a list item.
-Clicking on a task removes it from the list.
+Kullanıcı, giriş alanına görevini yazarak listeye ekler.
+Eklenen görevler liste üzerinde görüntülenir.
+Görevler tıklanarak tamamlandı olarak işaretlenebilir veya silme butonu ile kaldırılabilir.
+Uygulama, görevleri LocalStorage üzerinde saklayarak veri kalıcılığı sağlar.
+
 
